@@ -637,11 +637,11 @@ h6,
   margin: 0 auto;
 }
 .container {
-  max-width: 114rem;
+  max-width: 144rem;
   padding-right: 1rem;
   padding-left: 1rem;
 }
-@media screen and (min-width: 114rem) {
+@media screen and (min-width: 144rem) {
   .container {
     padding-right: 0;
     padding-left: 0;
