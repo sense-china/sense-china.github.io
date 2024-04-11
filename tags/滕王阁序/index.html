@@ -22,6 +22,8 @@
     <link rel="shortcut icon" href="/images/favicon.ico">
   
   
+    <link rel="stylesheet" href="/libs/swiper/swiper-bundle.min.css"/>
+  
   
 <link rel="stylesheet" href="/css/style.css">
 
@@ -116,8 +118,9 @@
     <div class="card rounded">
       
   
-    <a class="card-img-link" href="/2012/12/21/tengwanggexu/" rel="gallery_clu820b4s000kdevd1n2ccghj">
-      <img class="card-img lazyload" data-src="/images/sample/mydesk.png" itemprop="image" alt="gallery">
+    <a class="card-img-link" href="/2012/12/21/tengwanggexu/" rel="gallery_cluv394lb000ik3vd7jn53ihm">
+      <div class="card-img-container" style="background-size: cover; background-image: url(/images/sample/mydesk.png);">
+      </div>
     </a>
   
 
@@ -200,7 +203,7 @@
           <ul class="list-inline">
             
               <li class="list-inline-item">
-                <a href="https://shop3i785517106t1.1688.com/" title="1688" target="_blank" rel="noopener">1688</a>
+                <a href="https://sensechina.1688.com/" title="1688" target="_blank" rel="noopener">1688</a>
               </li>
             
               <li class="list-inline-item">
@@ -276,6 +279,24 @@
 	</script>
 
 
+
+	<!-- Swiper JS -->
+	<script src="/libs/swiper/swiper-bundle.min.js"></script>
+	<!-- Initialize Swiper -->
+	<script>
+		var swiper = new Swiper(".oneSwiper", {
+			// autoplay: true,
+			// zoom: true,
+			pagination: {
+        		el: ".swiper-pagination",
+        		clickable: true,
+      		},
+			navigation: {
+				nextEl: ".swiper-button-next",
+				prevEl: ".swiper-button-prev",
+			},
+		});
+	</script>
 
 
 
