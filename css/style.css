@@ -160,7 +160,7 @@ html {
 }
 body {
   position: relative;
-  font-family: "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
+  font-family: "Roboto", "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
   font-size: 1.6rem;
   line-height: 1.5;
   background-color: #fff;
@@ -727,6 +727,9 @@ h6,
   padding: 1rem;
   color: #212529;
 }
+.main-nav .nav-item.active {
+  font-weight: bold;
+}
 .main-nav .nav-item.active .nav-item-link {
   color: #000091;
 }
@@ -837,6 +840,9 @@ h6,
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+.mobile-nav .nav-item.active {
+  nav-item: active;
 }
 .mobile-nav .nav-item.active .nav-item-link {
   color: #000091;
