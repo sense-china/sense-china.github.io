@@ -1217,6 +1217,137 @@ h6,
 .album-art h5 {
   color: #000091;
 }
+.inquiry {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  padding: 3rem;
+  border: 0.1rem solid #dee2e6;
+  border-radius: 0.8rem;
+  background: #fff;
+  box-shadow: 0 1rem 3rem rgba(0,0,0,0.06);
+}
+.inquiry-header {
+  max-width: 72rem;
+  margin-bottom: 2rem;
+}
+.inquiry-title {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+.inquiry-subtitle {
+  margin: 0;
+  color: #6c757d;
+}
+.inquiry-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+@media screen and (min-width: 768px) {
+  .inquiry-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+.inquiry-field {
+  display: block;
+  margin-bottom: 1.5rem;
+  color: #343a40;
+}
+.inquiry-field span {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+.inquiry-field strong {
+  color: #ff6b81;
+}
+.inquiry-field input,
+.inquiry-field textarea {
+  display: block;
+  width: 100%;
+  border: 0.1rem solid #dee2e6;
+  border-radius: 0.4rem;
+  padding: 1.2rem 1.4rem;
+  color: #212529;
+  background-color: #fff;
+  font: inherit;
+  transition: #dee2e6 0.2s ease;
+}
+.inquiry-field textarea {
+  min-height: 16rem;
+  resize: vertical;
+}
+.inquiry-field input:focus,
+.inquiry-field textarea:focus {
+  outline: none;
+  border-color: #000091;
+  box-shadow: 0 0 0 0.3rem rgba(0,92,185,0.12);
+}
+.inquiry-field-wide {
+  margin-top: 1.5rem;
+}
+.inquiry-trap {
+  position: absolute;
+  left: -9999px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+.inquiry-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: flex-start;
+  margin-top: 2rem;
+}
+@media screen and (min-width: 768px) {
+  .inquiry-actions {
+    flex-direction: row;
+    align-items: center;
+  }
+}
+.inquiry-submit {
+  border: 0;
+  border-radius: 0.4rem;
+  padding: 1.2rem 2.4rem;
+  color: #fff;
+  background-color: #000091;
+  font: inherit;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+.inquiry-submit:hover {
+  background-color: #0000b5;
+}
+.inquiry-submit:disabled {
+  cursor: not-allowed;
+  opacity: 0.65;
+}
+.inquiry-note {
+  margin: 0;
+  color: #6c757d;
+  font-size: 1.4rem;
+}
+.inquiry-status {
+  min-height: 2.4rem;
+  margin: 1.5rem 0 0;
+  font-weight: 600;
+}
+.inquiry-status-success {
+  color: #7bed9f;
+}
+.inquiry-status-error {
+  color: #ff6b81;
+}
+.inquiry-status-sending {
+  color: #000091;
+}
+@media screen and (max-width: 768px) {
+  .inquiry {
+    padding: 2rem;
+  }
+}
 pre,
 code {
   font-family: 'Fira Code', monospace;

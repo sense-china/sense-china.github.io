@@ -197,7 +197,7 @@
 </div>
 <div class="row">
     
-    <div class="col-4">
+    <div class="col-6">
     <div class="card rounded bg-white">
 
         <!-- <img class="card-img lazyload" data-src="/images/sample/sales.svg" alt=""> -->
@@ -219,29 +219,7 @@
     </div>
     </div>
     
-    <div class="col-4">
-    <div class="card rounded bg-white">
-
-        <!-- <img class="card-img lazyload" data-src="/images/sample/sales.svg" alt=""> -->
-        
-        <div class="card-body bg-light">
-            <!-- <img class="card-img lazyload" data-src="/images/sample/sales.svg" alt=""> -->
-            <h6 class="card-title line-clamp line-clamp-1">👩 Phoebe</h6>
-            <!-- <small class="text-warning d-block mb-3"></small> -->
-            <small class="text-primary d-block mb-3">
-                E-Mail: <a href="mailto:phoebe.feng@sense-china.cn">phoebe.feng@sense-china.cn</a>
-            </small>
-
-            <small class="text-primary d-block mb-3">Mobile: +8617520662893</small>
-
-            <!-- <small class="text-primary d-block mb-3">Fax: </small> -->
-            <small class="text-primary d-block mb-3">Tel: 86-6623510301/ 86-6623510111</small>
-            <!-- <div class="card-text text-gray line-clamp line-clamp-2">17520662893</div> -->
-        </div>
-    </div>
-    </div>
-    
-    <div class="col-4">
+    <div class="col-6">
     <div class="card rounded bg-white">
 
         <!-- <img class="card-img lazyload" data-src="/images/sample/sales.svg" alt=""> -->
@@ -268,11 +246,64 @@
             </div>
         </div>
         <div class="article-inner">
-            <iframe class="col-12" 
-                src="https://docs.google.com/forms/d/e/1FAIpQLSev7-Eeb7Gb0QKDul3d5cssZYfH7VGGUtInhfAs6GbWjQGonQ/viewform?embedded=true"
-                height="1000px" frameborder="0" marginheight="0" marginwidth="0">正在加载…</iframe>
+            
+<div class="inquiry">
+  <div class="inquiry-header">
+    <h3 class="inquiry-title">Contact Us</h3>
+    <p class="inquiry-subtitle">Tell us what you are looking for. Our sales team will get back to you soon.</p>
+  </div>
+
+  <form class="inquiry-form" data-inquiry-form data-endpoint="https://website-inquiry-sksumzridn.cn-hangzhou.fcapp.run" data-subject="Website Inquiry" data-source="About page" novalidate>
+    <div class="inquiry-grid">
+      <label class="inquiry-field">
+        <span>Name / Company <strong>*</strong></span>
+        <input type="text" name="name" autocomplete="organization" required maxlength="120">
+      </label>
+
+      <label class="inquiry-field">
+        <span>E-mail <strong>*</strong></span>
+        <input type="email" name="email" autocomplete="email" required maxlength="160">
+      </label>
+
+      <label class="inquiry-field">
+        <span>Mobile / WhatsApp</span>
+        <input type="text" name="mobile" autocomplete="tel" maxlength="80">
+      </label>
+
+      <label class="inquiry-field">
+        <span>Country / Region</span>
+        <input type="text" name="country" autocomplete="country-name" maxlength="120">
+      </label>
+    </div>
+
+    <label class="inquiry-field inquiry-field-wide">
+      <span>Interested Products</span>
+      <input type="text" name="products" maxlength="160">
+    </label>
+
+    <label class="inquiry-field inquiry-field-wide">
+      <span>Message <strong>*</strong></span>
+      <textarea name="message" rows="6" required maxlength="2000"></textarea>
+    </label>
+
+    <label class="inquiry-trap" aria-hidden="true">
+      Website
+      <input type="text" name="website" tabindex="-1" autocomplete="off">
+    </label>
+
+    <div class="inquiry-actions">
+      <button class="inquiry-submit" type="submit">Submit Inquiry</button>
+      <p class="inquiry-note">We only use your information to respond to your inquiry.</p>
+    </div>
+
+    <p class="inquiry-status" data-inquiry-status role="status" aria-live="polite"></p>
+  </form>
+</div>
+
+
         </div>
 </div>
+
   </div>
 </div>
 
@@ -448,6 +479,9 @@
 
 
 <script src="/js/script.js"></script>
+
+
+<script src="/js/inquiry-form.js"></script>
 
 
 </body>
